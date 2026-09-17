@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Unique Trend Store</title>
+  <link rel="icon" type="image" href="./images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="./script.js"></script>
+</head>
+<body>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar" id="sidebar">
+    <button class="close-btn" onclick="toggleMenu()" aria-label="Close menu">✕</button>
+    <div class="sidebar-brand">UTS</div>
+    <nav>
+      <a href="#hero" onclick="toggleMenu()">Home</a>
+      <a href="#shop" onclick="toggleMenu()">Shop</a>
+      <a href="#about" onclick="toggleMenu()">About</a>
+      <a href="#footer" onclick="toggleMenu()">Contact</a>
+    </nav>
+  </div>
+  <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <button class="menu-btn" onclick="toggleMenu()" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="header-center">
+      <div class="header-title">The Unique Trend Store</div>
+    </div>
+    <div class="cart-icon">
+      <a href="#shop">🛍</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+   <div class="hero">
+<div class="slideshow">
+    <div class="slide active">
+        <img src="./images/mockup.png" alt="Slide 1">
+    </div>
+    <div class="slide">
+        <img src="./images/Hero1.JPG" alt="Slide 2">
+    </div>
+    <div class="slide">
+        <img src="./images/Hero5.JPG" alt="Slide 3">
+    </div>
+
+
+
+    <!-- Dots -->
+    <div class="dots">
+        <span class="dot active" onclick="goToSlide(0)"></span>
+        <span class="dot" onclick="goToSlide(1)"></span>
+        <span class="dot" onclick="goToSlide(2)"></span>
+    </div>
+</div>
+    <div class="hero-text">
+      <p class="hero-eyebrow">New Arrivals</p>
+      <h1>Wear What<br><em>Defines You</em></h1>
+      <a href="#shop" class="hero-btn">Shop the Collection</a>
+    </div>
+  </div>
+  </section>
+
+  <!-- SHOP / PRODUCT GRID -->
+  <section class="shop" id="shop">
+    <div class="section-header">
+      <p class="eyebrow">The Collection</p>
+      <h2>Shop</h2>
+    </div>
+
+    <div class="product-grid">
+
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="./images/uq1.jpeg" alt="UT Crop Jersey" onerror="this.src='';
+        this.parentElement.classList.add('img-missing')" onclick="openLightbox(this.src)">
+          <span class="product-badge">New</span>
+        </div>
+        <div class="product-info">
+          <h3>UT Crop Jersey</h3>
+          <p class="price">GHS 350.00</p>
+          <a href="https://wa.me/233540826773?text=Hi%2C%20I%20want%20to%20order%20the%20UT%20Crop%20Jersey%20-%20GHS%20350" 
+    target="_blank" class="add-btn">Order on WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="./images/uq2.jpeg" alt="Unique Trend Jersey" onerror="this.src='';
+        this.parentElement.classList.add('img-missing')" onclick="openLightbox(this.src)">
+        </div>
+        <div class="product-info">
+          <h3>Unique Trend Jersey</h3>
+          <p class="price">GHS 350.00</p>
+          <a href="https://wa.me/233540826773?text=Hi%2C%20I%20want%20to%20order%20the%20Unique%20Trend%20Jersey%20-%20GHS%20350" 
+    target="_blank" class="add-btn">Order on WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- Placeholder cards — swap src with your images -->
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="./images/uq3.jpeg" alt="Product Name" onerror="this.src='';
+          this.parentElement.classList.add('img-missing')" onclick="openLightbox(this.src)" >
+        </div>
+        <div class="product-info">
+          <h3>UT Crewneck</h3>
+          <p class="price">GHS 280.00</p>
+          <a href="https://wa.me/233540826773?text=Hi%2C%20I%20want%20to%20order%20the%20UT%20Crewneck%20-%20GHS%20350" 
+      target="_blank" class="add-btn">Order on WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="./images/uq4.jpeg" alt="Product Name" onerror="this.src=''; 
+          this.parentElement.classList.add('img-missing')"  onclick="openLightbox(this.src)">
+        </div>
+        <div class="product-info">
+          <h3>UT T-Shirt</h3>
+          <p class="price">GHS 200.00</p>
+          <a href="https://wa.me/233540826773?text=Hi%2C%20I%20want%20to%20order%20the%20UT%20T-Shirt%20-%20GHS%20350" 
+      target="_blank" class="add-btn">Order on WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="./images/uq5.jpeg" alt="Product Name" onerror="this.src=''; 
+          this.parentElement.classList.add('img-missing')" onclick="openLightbox(this.src)">
+        </div>
+        <div class="product-info">
+          <h3>UT Crewneck</h3>
+          <p class="price">GHS 280.00</p>
+          <a href="https://wa.me/233540826773?text=Hi%2C%20I%20want%20to%20order%20the%20UT%20Crewneck%20-%20GHS%20350" 
+    target="_blank" class="add-btn">Order on WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="./images/uq6.jpeg" alt="Product Name" onerror="this.src=''; 
+          this.parentElement.classList.add('img-missing')" onclick="openLightbox(this.src)">
+        </div>
+        <div class="product-info">
+          <h3>UT T-Shirt </h3>
+          <p class="price">GHS 200.00</p>
+          <a href="https://wa.me/233XXXXXXXXX?text=Hi%2C%20I%20want%20to%20order%20the%20UT%20T-Shirt%20-%20GHS%20350" 
+      target="_blank" class="add-btn">Order on WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="./images/uq7.jpeg" alt="Product Name" onerror="this.src=''; 
+          this.parentElement.classList.add('img-missing')" onclick="openLightbox(this.src)">
+        </div>
+        <div class="product-info">
+          <h3>UT Crewneck</h3>
+          <p class="price">GHS 280.00</p>
+          <a href="https://wa.me/233XXXXXXXXX?text=Hi%2C%20I%20want%20to%20order%20the%20UT%20Crewneck%20-%20GHS%20350" 
+    target="_blank" class="add-btn">Order on WhatsApp</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="about-text">
+        <p class="eyebrow">Our Story</p>
+        <h2>Built Different.<br>Dressed Unique.</h2>
+        <p class="about-body">
+          The Unique Trend Store was born from a simple idea — clothing should say something. 
+          We design pieces rooted in Ghanaian identity and global style, for people who move 
+          with confidence and wear with intention.
+        </p>
+        <a href="#shop" class="hero-btn outline">Shop Now</a>
+      </div>
+      <div class="about-img-wrap">
+        <img src="./images/brand logo.jpeg" alt="About The Unique Trend Store" onerror="this.style.display='none'">
+        <div class="about-img-placeholder"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+    <div class="footer-top">
+      <div class="footer-brand">The Unique Trend Store</div>
+      <p class="footer-tagline">Wear what defines you.</p>
+    </div>
+    <div class="footer-socials">
+      <a href="https://instagram.com/theuniquetrend01" aria-label="Instagram">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="#" aria-label="WhatsApp">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+      </a>
+      <a href="https://tiktok.com/@the.unique.trend" aria-label="TikTok">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.28 6.28 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0
+  0 6.34-6.34V7.5a4.83 4.83 0 0 1-2.55-.81z"/></svg>
+
+      </a>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 The Unique Trend Store. All rights reserved.</p>
+    </div>
+  </footer>
+    <script>      
+    function toggleMenu() {
+      const sidebar = document.getElementById('sidebar');
+      const overlay = document.getElementById('overlay');
+      sidebar.classList.toggle('open');
+      overlay.classList.toggle('active');
+      document.body.style.overflow = sidebar.classList.contains('open') ? 'hidden' : '';
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        document.getElementById('sidebar').classList.remove('open');
+        document.getElementById('overlay').classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+
+    document.querySelectorAll('.add-btn').forEach(btn => {
+      btn.addEventListener('click', function () {
+        const original = this.textContent;
+        this.textContent = 'Added ✓';
+        this.style.background = '#8c9068';
+        setTimeout(() => {
+          this.textContent = original;
+          this.style.background = '';
+        }, 1500);
+      });
+    });
+    </script>
+
+    <!-- Lightbox -->
+<div id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Product View">
+</div>
+</body>
+</html>
