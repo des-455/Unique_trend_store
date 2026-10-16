@@ -689,3 +689,31 @@ a   { text-decoration: none; color: inherit; }
         padding: 24px 20px;
     }
 }
+/* ─── CATEGORY SECTIONS ─────────────────────────── */
+.category {
+  margin-bottom: 56px;
+  scroll-margin-top: calc(var(--header-h) + 16px); /* keeps heading visible under sticky header */
+}
+
+.category:last-child { margin-bottom: 0; }
+
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.category-header h3 {
+  font-family: var(--font-display);
+  font-size: clamp(1.2em, 3.5vw, 1.7em);
+  font-weight: 700;
+  color: var(--black);
+  white-space: nowrap;
+}
+
+.category-line {
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
